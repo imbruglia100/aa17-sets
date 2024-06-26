@@ -4,7 +4,12 @@
 
 # Write your code here.
 def check_binary(str):
-    pass
+    st = set(str)
+    print(st)
+    for x in st:
+        if int(x) > 1:
+            return False
+    return True
 
 str1 = '1010001010010100101'
 str2 = '1010010015010101010'
